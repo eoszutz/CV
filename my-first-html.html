@@ -5,22 +5,61 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My first html</title>
+
+    <style>
+            body {
+                margin: 50px;
+                padding: 50px;
+            }
+            h1 {
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(58, 58, 58);
+            padding: 20px;
+            }
+            a {
+                color: red
+            }
+            .column {
+                float:left;
+                padding: 50px;
+                background-color: grey;
+            }
+            .left {
+                width: 25%;
+
+            }
+            .right {
+                width: 75%;
+            }
+
+
+    </style>
 </head>
 <body>
-    <h1>Student Bio</h1>
-    <h2>Elliot Szutz</h2>
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png">
-        <p>I am a program manager for Microsoft, and I'm doing this to learn a new skill and expand my background</p>
-        <p>Visit my github <a href="https://github.com/eoszutz/"> Here</a></p>
+    <div class="title">
+        <h1>
+            About Me
+        </h1>
     </div>
-    <div>
-        <h2>Contact Info</h2>
-            <ul>
-                <li><strong>Email: <a href="eoszutz@gmail.com">eoszutz@gmail.com</a></strong></li>
-                <li><strong>Github: <a href="https://github.com/eoszutz/">eoszutz</a></strong></li>
-                <li><strong>Portfolio: <a href="#">Coming soon</a></strong></li>
-            </ul>
+    <div class="student-info">
+        <div class="column">
+            <h2>Elliot Szutz</h2>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png">
+                <p>I am a program manager for Microsoft, and I'm doing this to learn a new skillsets</p>
+                <p>Visit my github <a href="https://github.com/eoszutz/"> Here</a></p>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Contact Info</h2>
+                <ul>
+                    <li><strong>Email: <a href="eoszutz@gmail.com">eoszutz@gmail.com</a></strong></li>
+                    <li><strong>Github: <a href="https://github.com/eoszutz/">eoszutz</a></strong></li>
+                    <li><strong>Portfolio: <a href="#">Coming soon</a></strong></li>
+                </ul>
+        </div>
     </div>
 </body>
 </html>
