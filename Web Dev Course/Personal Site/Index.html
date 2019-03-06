@@ -10,42 +10,132 @@
     <script src="main.js"></script>
 </head>
 <style>
-    #header {
-        margin: 20px;
-        background-color: aqua;
-
+    body {
+        margin: 40px;
     }
 
-    #body {
+    table#aboutme td{
+        padding-left: 50px;
+    }
+
+    table#workHistory {
+        border-collapse: collapse;
+        margin: 10px;
+    }
+
+    table#workHistory tbody tr:hover {
+        background-color: lightgray;
+    }
+
+    table#workHistory td {
+        padding-left: 10px;
+        width: 225px;
+    }
+
+    table#workHistory thead {
+        text-align: left;
+    }
+
+    .contactForm {
         margin: 40px;
+    }
+
+    .contactForm input{
+        padding-left: 10px;
     }
 </style>
 
 <body class=body>
-    <div class=header>
-        <h1>Elliot Szutz</h1>
-        <img src="./Profile.jpg" alt="Elliot Szutz Profile Picture">
-        <H2>About me</H2>
+    <div>
+        <table id=aboutMe>
+            <tr>
+                <td>
+                    <img src="./Profile.jpg" alt="Elliot Szutz Profile Picture">
+                </td>
+                <td>
+                    <h1>Elliot Szutz</h1>
+                    <H2>About me</H2>
+                    <p>Professional generalist with several years experience in accounting and project based work.<br>I
+                        thrive at
+                        finding rovel solutions to complex problems, learning, and embracing efficient processes and
+                        tools.</p>
+                </td>
+            </tr>
+        </table>
+
         <hr>
-        <h3>Work History</h3>
-        <ul>
-            <li>Program Manager - Experis<br> <em>April 2017 - Present</em></li>
-            <li>Project Accountant - Extended Stay America<br> <em>March 2016 - April 2017</em></li>
-            <li>Accounting Specialist - Campus Crest Group<br> <em>October 2014 - March 2016</em></li>
-        </ul>
-        <a download href="./Szutz, Elliot Resume.pdf">Detailed Resume</a>
+        <div>
+            <h2>Work History</h2>
+            <table id=workHistory>
+                <thead>
+                    <tr>
+                        <th>Years</th>
+                        <th>Role</th>
+                        <th>Organization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>April 2017 - Present</td>
+                        <td>Program Manager</td>
+                        <td>Experis</td>
+                    </tr>
+                    <tr>
+                        <td>March 2016 - March 2017</td>
+                        <td>Project Accountant</td>
+                        <td>Extended Stay America</td>
+                    </tr>
+                    <tr>
+                        <td>October 2014 - March 2016</td>
+                        <td>Accounting Specialist</td>
+                        <td>Campus Crest Group</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a download href="./Szutz, Elliot Resume.pdf">Detailed Resume</a>
+            <hr>
+        </div>
+
+        <div>
+            <a href="./Interests.html">
+                <h2>Interests</h2>
+            </a>
+            <hr>
+        </div>
+
+        <div>
+            <h2>Resources</h2>
+            <ul>
+                <li><strong>Email: </strong><em>eoszutz@gmail.com</em></li>
+                <li><strong>Linkedin: </strong><a href="https://www.linkedin.com/in/elliot-szutz-1ba75ab">Elliot
+                        Szutz</a>
+                </li>
+                <li><strong>Github: </strong><em><a href="https://github.com/eoszutz/">eoszutz</a></em></li>
+            </ul>
+            <hr>
+        </div>
+
+        <div>
+            <h2>Education</h2>
+            Black Hills State University <br>
+            <em>Bacheleors of Science - Business Finance and Economics</em> - Class of 2014
+        </div>
+    </div>
+    <div>
         <hr>
-        <a href="./Interests.html"><h2>Interests</h2></a>
-        <h2>Resources</h2>
-        <ul>
-            <li><strong>Email: </strong><em>eoszutz@gmail.com</em></li>
-            <li><strong>Linkedin: </strong><a href="https://www.linkedin.com/in/elliot-szutz-1ba75ab">Elliot Szutz</a></li>
-            <li><strong>Github: </strong><em><a href="https://github.com/eoszutz/">eoszutz</a></em></li>
-        </ul>
-        <hr>
-        <h2>Education</h2>
-        Black Hills State University <br>
-        <em>Bacheleors of Science - Business Finance and Economics</em> - Class of 2014
+        <h2>Reaching out</h2>
+        <form class="contactForm" action="index.html" method="post" enctype="text/plain">
+            <label><strong>Your Name:</strong></label>
+            <input type="text" name="yourName" value="">
+            <br>
+            <label><strong>Your Email:</strong></label>
+            <input type="email" name="yourEmail" value="">
+            <br>
+            <label><strong>Message:</strong></label> <br>
+            <textarea name="yourMessage" rows='10' cols='30'></textarea>
+            <br>
+            <input type="submit" name="">
+        </form>
     </div>
 </body>
 
